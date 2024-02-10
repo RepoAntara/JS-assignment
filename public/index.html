@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="javascript.css">
+    <script src="https://kit.fontawesome.com/d531d373d2.js" crossorigin="anonymous"></script>
+</head>
+<body class="overflow-x-hidden w-screen h-screen">
+    <section class="w-screen h-screen flex justify-center items-center flex-col text-3xl bg-black text-white">
+        <div class="w-max h-max flex flex-col gap-5 p-10">
+            <div class="font-sans text-5xl font-bold flex flex-col items-start w-full mb-11">
+                <p>Welcome To</p> 
+                <p class="ml-36 mt-2">ReNeki.Shop</p>
+            </div>
+            <p class="flex flex-row font-serif font-xl">Good <b class="mx-2 font-light" id="displayTime"></b> please insert your User Name</p>
+            <form action="#main" class="w-full border-main border-2 rounded-full relative">
+                <input type="text" id="newUserName" class="flex justify-center box-border outline-none bg-transparent rounded-full w-full px-3 py-1 text-xl" placeholder="User Name">
+                <button class="bg-main rounded-full text-xl px-4 h-full border-2 border-transparent hover:border-white absolute right-0 top-0" onclick="start()">GO</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="flex justify-center w-screen" id="main">
+        <div class="w-full h-80 bg-main border-2 mt-10 flex flex-col justify-center items-center text-3xl">
+            <p >Hello<b class="px-2" id="displayUserName"></b></p>
+            <p>let we help you find what you want</p>
+        </div>
+    </section>
+
+    <main class="w-screen h-max py-10 justify-evenly flex flex-wrap gap-3 gap-y-5 font-serif">
+    </main>
+
+    <section class="fixed top-[90%] transition-all transition overflow-scroll w-screen min-h-48 h-max bg-white px-5 pt-1" id="containerBuy">
+        <button class="absolute top-1" onclick="show()">
+            <i class="fa-solid fa-arrow-up text-2xl rounded-full"></i>
+        </button>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
